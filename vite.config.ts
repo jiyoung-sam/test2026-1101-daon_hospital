@@ -4,6 +4,16 @@ import tailwindcss from '@tailwindcss/vite'
 import fs from 'node:fs'
 import path from 'node:path'
 
+// Figma 설정 파일을 대신하는 기본 설정
+const siteConfiguration = {
+  description: "다온한방병원의 진료 분야와 의료진, 병원 정보를 안내하는 웹사이트입니다.",
+  robots: {
+    index: false
+  },
+  accessibility: {
+    addBypassLinks: false
+  }
+}
 
 // Vite config — https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
