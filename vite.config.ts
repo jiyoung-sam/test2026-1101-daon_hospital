@@ -29,8 +29,8 @@ export default defineConfig(({ mode }) => {
     plugins: [
 react(),
       tailwindcss(),
-      figmaSiteConfiguration(siteConfiguration),
-      figmaErrorOverlayReplay(),
+// Figma Make 전용 설정 플러그인 비활성화
+// figmaSiteConfiguration(siteConfiguration),      figmaErrorOverlayReplay(),
       figmaReactRefreshBoundaryFallback(),
       figmaMakeKitPlugin({ storiesGlob: '/src/**/*.stories.{ts,tsx,js,jsx}' }),
       figmaLinkedPackageSourcemaps(),
